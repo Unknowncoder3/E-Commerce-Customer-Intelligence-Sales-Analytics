@@ -1,455 +1,260 @@
 # 🛒 E-Commerce Customer Intelligence & Sales Analytics
 
 <p align="center">
-  <img src="Screenshots/Dashboard.jpeg" alt="E-Commerce Sales Dashboard" width="100%">
+  <img src="Screenshots/Dashboard.jpeg" alt="E-Commerce Sales Analytics Dashboard" width="100%">
 </p>
 
 <p align="center">
-  <b>End-to-End Data Analysis Project using Python, Pandas, RFM Customer Segmentation & Tableau</b>
+  <b>End-to-end retail analytics using Python, Pandas, RFM customer segmentation and Tableau.</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Unknowncoder3/E-Commerce-Customer-Intelligence-Sales-Analytics">
-    <img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub">
-  </a>
-  <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas" alt="Pandas">
-  <img src="https://img.shields.io/badge/Tableau-Dashboard-E97627?logo=tableau" alt="Tableau">
-  <img src="https://img.shields.io/badge/Status-Completed-success" alt="Status">
+  <a href="https://public.tableau.com/app/profile/snehasish.das4354/viz/OnlineRetailSalesDashboard_17869560125930/OnlineRetailSalesDashboard">Interactive Tableau Dashboard</a> •
+  <a href="https://github.com/Unknowncoder3/E-Commerce-Customer-Intelligence-Sales-Analytics">Repository</a>
 </p>
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
-**E-Commerce Customer Intelligence & Sales Analytics** is an end-to-end data analytics project built to transform raw online retail transaction data into meaningful business insights.
+This project transforms raw online-retail transactions into **business-ready customer and sales intelligence**.
 
-The project combines **Python-based data cleaning and exploratory analysis**, **RFM customer segmentation**, and an **interactive Tableau dashboard** to analyze sales performance, customer behavior, products, countries, and purchasing trends.
+The workflow covers data cleaning, exploratory analysis, feature engineering, RFM segmentation, sales analysis and interactive Tableau reporting. The objective is to answer practical business questions around revenue, customers, products, geography and seasonality.
 
-The goal is to answer practical business questions such as:
+### Business questions
 
-* How much revenue is being generated?
-* Which countries contribute the most revenue?
-* Which products generate the highest sales?
-* Which customer segments are most valuable?
-* How does revenue change throughout the year?
-* Which quarters perform best?
-* Which days of the week generate the most revenue?
-* How can customers be segmented based on their purchasing behavior?
+- Which countries and products drive the most revenue?
+- How does revenue change over time?
+- Who are the highest-value customers?
+- Which customer groups are at risk of churn?
+- Which periods and weekdays perform best?
+- How can customer segmentation support retention decisions?
 
 ---
 
-## 🎯 Business Objectives
+## 🎯 What This Project Demonstrates
 
-The project focuses on four major analytical areas:
-
-### 💰 Sales Performance
-
-* Analyze total revenue and order volume
-* Identify top-performing countries
-* Analyze quarterly and monthly revenue trends
-* Understand revenue distribution across weekdays
-
-### 👥 Customer Intelligence
-
-* Analyze customer purchasing behavior
-* Calculate customer-level RFM metrics
-* Segment customers based on Recency, Frequency and Monetary value
-* Identify high-value and at-risk customer groups
-
-### 📦 Product Analysis
-
-* Identify top products by revenue
-* Compare product-level performance
-* Understand which products contribute most to overall sales
-
-### 📊 Business Dashboard
-
-* Build an interactive Tableau dashboard
-* Add dynamic country and date filters
-* Present KPIs and visual insights in a business-friendly format
+| Area | Demonstrated skills |
+|---|---|
+| Data preparation | Missing values, invalid transactions, duplicates, dates |
+| Exploratory analysis | Revenue, orders, customers, products, geography, trends |
+| Customer analytics | RFM scoring and behavioral segmentation |
+| Visualization | Tableau dashboards and KPI design |
+| Business intelligence | Translating analytical findings into business questions |
+| Reproducibility | Notebook-based Python workflow and documented structure |
 
 ---
 
-# 🛠️ Tech Stack
+## 🧰 Tech Stack
 
-| Technology          | Purpose                               |
-| ------------------- | ------------------------------------- |
-| 🐍 Python           | Data analysis and preprocessing       |
-| 🐼 Pandas           | Data cleaning and manipulation        |
-| 📓 Jupyter Notebook | Exploratory data analysis             |
-| 📊 Tableau          | Interactive dashboard & visualization |
-| 📗 Excel            | Source retail transaction dataset     |
-| 🧮 RFM Analysis     | Customer segmentation                 |
-| 🔧 Git & GitHub     | Version control and project hosting   |
+- **Python** — analysis and preprocessing
+- **Pandas / NumPy** — data manipulation
+- **Jupyter Notebook** — reproducible analysis
+- **Tableau** — interactive dashboarding
+- **Excel** — source transaction data
+- **RFM Analysis** — customer segmentation
+- **Git & GitHub** — version control
 
 ---
 
-# 📂 Project Structure
+## 🔄 End-to-End Workflow
+
+```text
+Raw Online Retail Transactions
+            ↓
+Data Quality Checks & Cleaning
+            ↓
+Feature Engineering
+            ↓
+Exploratory Data Analysis
+            ↓
+RFM Customer Analysis
+            ↓
+Customer Segmentation
+            ↓
+Sales & Product Analysis
+            ↓
+Tableau Dashboard
+            ↓
+Business Insights & Recommendations
+```
+
+---
+
+## 🧹 Data Preparation
+
+The source transaction data contains fields such as invoice number, invoice date, customer ID, country, product description, quantity and unit price.
+
+The analysis pipeline includes:
+
+- Handling missing customer information
+- Removing invalid transactions
+- Handling cancelled/returned invoices
+- Checking duplicate records
+- Converting dates to analysis-ready formats
+- Creating revenue measures from quantity and unit price
+- Preparing analytical datasets for segmentation and visualization
+
+---
+
+## 📊 Core KPIs
+
+The current dashboard reports approximately:
+
+- **Revenue:** 9.75M
+- **Orders:** 22,061
+- **Customers:** 4,372
+- **Average Order Value:** 442
+
+These figures depend on the dashboard's filters and analysis definitions.
+
+---
+
+## 👥 RFM Customer Segmentation
+
+RFM analysis evaluates customers using three dimensions:
+
+- **Recency:** how recently a customer purchased
+- **Frequency:** how often a customer purchased
+- **Monetary:** how much revenue a customer generated
+
+The resulting scores are used to create behavioral groups such as:
+
+- Champions
+- Loyal Customers
+- Potential Loyalists
+- At Risk
+- Lost Customers
+- Other segments
+
+This provides a practical framework for prioritizing retention and customer engagement strategies.
+
+---
+
+## 📈 Sales & Customer Analysis
+
+The project analyzes:
+
+- Revenue by country
+- Monthly revenue trends
+- Quarterly performance
+- Revenue by weekday
+- Top products by revenue
+- Customer-segment contribution
+- Customer purchasing behavior
+
+The Tableau dashboard combines these views into an interactive business-facing report.
+
+---
+
+## 📊 Tableau Dashboard
+
+### Dashboard capabilities
+
+- KPI cards
+- Country filtering
+- Date filtering
+- Revenue and order analysis
+- Customer analysis
+- Top countries
+- Monthly trends
+- Top products
+- Customer segments
+- Quarterly analysis
+- Day-of-week analysis
+
+### 🔗 Interactive dashboard
+
+**[Open the Tableau Public Dashboard →](https://public.tableau.com/app/profile/snehasish.das4354/viz/OnlineRetailSalesDashboard_17869560125930/OnlineRetailSalesDashboard)**
+
+### Preview
+
+<p align="center">
+  <img src="Screenshots/Dashboard.jpeg" alt="Tableau Dashboard Preview" width="95%">
+</p>
+
+---
+
+## 💡 Business Insights
+
+The analysis highlights several decision-support themes:
+
+1. Revenue is concentrated in a limited number of geographic markets.
+2. RFM segmentation separates high-value customers from customers showing weaker engagement.
+3. Revenue varies across months and quarters, revealing seasonal patterns.
+4. A smaller group of products contributes a meaningful share of sales.
+5. Customer-level analysis can support more targeted retention strategies.
+
+> The purpose of these findings is to demonstrate how transaction data can be translated into actionable business questions and decisions.
+
+---
+
+## 📂 Repository Structure
 
 ```text
 E-Commerce-Customer-Intelligence-Sales-Analytics/
-│
-├── 📁 Datasets/
+├── Datasets/
 │   ├── Online Retail.xlsx
 │   ├── rfm_customer_segmentation.csv
 │   └── rfm_customer_segmentation_tableau.csv
-│
-├── 📁 notebook/
+├── notebook/
 │   └── 01_data_cleaning.ipynb
-│
-├── 📁 Screenshots/
+├── Screenshots/
 │   └── Dashboard.jpeg
-│
-├── 📁 Tableau/
+├── Tableau/
 │   └── Online Retail Sales Dashboard.twbx
-│
-├── 📄 .gitignore
-└── 📄 README.md
+├── .gitignore
+└── Readme.md
 ```
 
 ---
 
-# 🔄 Project Workflow
-
-```text
-Raw E-Commerce Data
-        ↓
-Data Cleaning & Preprocessing
-        ↓
-Exploratory Data Analysis
-        ↓
-Feature Engineering
-        ↓
-RFM Analysis
-        ↓
-Customer Segmentation
-        ↓
-Sales Analysis
-        ↓
-Tableau Visualization
-        ↓
-Interactive Business Dashboard
-```
-
----
-
-# 🧹 1. Data Cleaning & Preprocessing
-
-The raw **Online Retail** dataset contains transactional information including:
-
-* Invoice Number
-* Invoice Date
-* Customer ID
-* Country
-* Stock Code
-* Product Description
-* Quantity
-* Unit Price
-
-The data cleaning process includes:
-
-* Handling missing values
-* Removing invalid transactions
-* Handling cancelled/returned invoices
-* Checking duplicate records
-* Converting date columns into appropriate formats
-* Creating calculated revenue values
-* Preparing clean datasets for analysis
-
-A cleaned dataset is then used for further analysis and visualization.
-
----
-
-# 📊 2. Exploratory Data Analysis
-
-The project analyzes multiple dimensions of the retail business.
-
-### Key KPIs
-
-* **Total Revenue:** 9.75M
-* **Total Orders:** 22,061
-* **Total Customers:** 4,372
-* **Average Order Value:** 442
-
-These metrics are dynamically affected by the dashboard filters.
-
----
-
-# 👥 3. RFM Customer Segmentation
-
-To understand customer behavior, the project implements **RFM Analysis**.
-
-### R — Recency
-
-Measures how recently a customer made a purchase.
-
-### F — Frequency
-
-Measures how frequently a customer makes purchases.
-
-### M — Monetary
-
-Measures how much revenue a customer generates.
-
-The three metrics are combined to create an **RFM Score**, which is then used to classify customers into meaningful behavioral segments.
-
-Example segments include:
-
-* Champions
-* Loyal Customers
-* At Risk
-* Potential Loyalists
-* Lost Customers
-* Others
-
-This allows businesses to understand **who their most valuable customers are and which customers may require targeted retention strategies.**
-
----
-
-# 📈 4. Sales Analysis
-
-The project analyzes revenue across several dimensions.
-
-### 🌍 Revenue by Country
-
-Identifies the countries contributing the most revenue and highlights geographic sales concentration.
-
-### 📅 Monthly Revenue Trend
-
-Tracks revenue throughout the year to identify:
-
-* Growth periods
-* Seasonal patterns
-* Revenue peaks
-* Revenue declines
-
-### 📦 Top 10 Products
-
-Identifies the products generating the highest revenue.
-
-### 👥 Customer Segment Revenue
-
-Compares revenue generated by different customer segments.
-
-### 📆 Revenue by Quarter
-
-Analyzes business performance across:
-
-* Q1
-* Q2
-* Q3
-* Q4
-
-### 🗓️ Revenue by Day of Week
-
-Compares revenue generated from Sunday through Friday to identify stronger purchasing days.
-
----
-
-# 📊 Interactive Tableau Dashboard
-
-The final Tableau dashboard brings the analysis together into a single interactive business intelligence interface.
-
-### Dashboard Features
-
-* 📌 KPI cards
-* 🌍 Country filter
-* 📅 Invoice date filter
-* 💰 Total revenue
-* 👥 Total customers
-* 🛒 Total orders
-* 📦 Total quantity
-* 💵 Average order value
-* 🌎 Top 10 countries by revenue
-* 📈 Monthly revenue trend
-* 📦 Top 10 products by revenue
-* 👥 Revenue by customer segment
-* 📊 Revenue by quarter
-* 📅 Revenue by day of week
-
-### 🔗 View the Interactive Dashboard
-
-[**Open Dashboard on Tableau Public →**](https://public.tableau.com/app/profile/snehasish.das4354/viz/OnlineRetailSalesDashboard_17869560125930/OnlineRetailSalesDashboard)
-
----
-
-# 💡 Key Business Insights
-
-The analysis provides several actionable insights:
-
-### 1. Geographic concentration
-
-Revenue is highly concentrated in a small number of countries, with the **United Kingdom** being the strongest contributor.
-
-### 2. Customer segmentation
-
-RFM analysis reveals clear differences between high-value customers, loyal customers, potential customers, and customers showing signs of churn.
-
-### 3. Seasonal revenue behavior
-
-Monthly analysis shows noticeable fluctuations in revenue throughout the year, helping identify periods of stronger and weaker business performance.
-
-### 4. Product contribution
-
-A relatively small group of products contributes significantly to overall revenue, making product-level analysis important for inventory and sales planning.
-
-### 5. Quarterly performance
-
-Quarterly analysis makes it easier to compare business performance and identify the strongest periods of the year.
-
----
-
-# 🚀 How to Run the Project
-
-## 1. Clone the Repository
+## 🚀 Reproduce the Python Analysis
 
 ```bash
 git clone https://github.com/Unknowncoder3/E-Commerce-Customer-Intelligence-Sales-Analytics.git
-```
-
-## 2. Navigate to the Project
-
-```bash
 cd E-Commerce-Customer-Intelligence-Sales-Analytics
+python -m venv .venv
 ```
 
-## 3. Install Required Libraries
+Activate the environment and install the analysis dependencies:
 
 ```bash
 pip install pandas numpy matplotlib seaborn openpyxl jupyter
 ```
 
-## 4. Launch Jupyter Notebook
+Then run:
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+Open `notebook/01_data_cleaning.ipynb` and execute the workflow sequentially.
 
-```text
-notebook/01_data_cleaning.ipynb
-```
-
-Run the notebook cells sequentially to reproduce the data cleaning and analysis workflow.
+To explore the Tableau workbook, open the `.twbx` file in Tableau Desktop.
 
 ---
 
-# 📊 Open the Tableau Dashboard
+## 🔮 Future Improvements
 
-The Tableau workbook is available inside:
-
-```text
-Tableau/
-```
-
-Open the `.twbx` file using **Tableau Desktop** to explore and modify the dashboard.
-
-The published interactive version is also available on Tableau Public.
+- [ ] Add SQL-based analysis layer
+- [ ] Add customer lifetime value
+- [ ] Add cohort and retention analysis
+- [ ] Add product profitability analysis
+- [ ] Add sales forecasting
+- [ ] Automate dashboard refresh
+- [ ] Build a lightweight analytics web application
 
 ---
 
-# 📸 Dashboard Preview
+## 👨‍💻 Author
 
-<p align="center">
-  <img src="Screenshots/Dashboard.jpeg" alt="Dashboard Preview" width="95%">
-</p>
+**Snehasish Das** — Data Analyst | Applied AI Developer
 
----
-
-# 📁 Dataset
-
-The project uses the **Online Retail** transactional dataset containing e-commerce purchase records.
-
-The dataset includes information related to:
-
-```text
-Invoice
-Product
-Quantity
-Invoice Date
-Unit Price
-Customer
-Country
-```
-
-The project transforms this raw transactional data into analytical datasets suitable for customer intelligence and business reporting.
+- GitHub: https://github.com/Unknowncoder3
+- Tableau Public: https://public.tableau.com/app/profile/snehasish.das4354
+- LinkedIn: https://www.linkedin.com/in/snehasish-das-b75a551b0/
 
 ---
 
-# 🔍 Skills Demonstrated
-
-This project demonstrates practical experience with:
-
-* Data Cleaning
-* Data Preprocessing
-* Exploratory Data Analysis
-* Feature Engineering
-* Customer Analytics
-* RFM Analysis
-* Customer Segmentation
-* Business Intelligence
-* Data Visualization
-* Dashboard Development
-* KPI Development
-* Trend Analysis
-* Git & GitHub
-* Tableau
-
----
-
-# 🧠 What I Learned
-
-Through this project, I gained practical experience in taking a dataset from **raw transactional data to a complete business analytics solution**.
-
-The project helped strengthen my understanding of:
-
-* Turning raw data into business-ready datasets
-* Identifying and handling data quality issues
-* Performing customer-level analysis
-* Applying RFM methodology
-* Designing meaningful business KPIs
-* Building interactive Tableau dashboards
-* Communicating analytical findings visually
-* Structuring and documenting a complete analytics project
-
----
-
-# 🔮 Future Improvements
-
-Potential improvements include:
-
-* [ ] Add customer lifetime value analysis
-* [ ] Add product profitability analysis
-* [ ] Add customer retention/churn analysis
-* [ ] Add sales forecasting
-* [ ] Add automated data refresh
-* [ ] Add advanced customer cohort analysis
-* [ ] Deploy an interactive analytics application
-* [ ] Add SQL-based data extraction and analysis
-
----
-
-# 👨‍💻 Author
-
-**Snehasish Das**
-
-Aspiring Data Analyst | Data Scientist
-
-Interested in:
-
-**Data Analytics • Business Intelligence • Machine Learning • Data Visualization**
-
-### Connect With Me
-
-* 💻 [GitHub](https://github.com/Unknowncoder3)
-* 📊 [Tableau Public](https://public.tableau.com/app/profile/snehasish.das4354)
-
----
-
-## ⭐ If You Found This Project Useful
-
-If you found this project interesting or useful, consider giving the repository a **⭐ star**.
-
-It helps support the project and encourages me to build more data-driven projects.
+⭐ If this project is useful, consider starring the repository.
